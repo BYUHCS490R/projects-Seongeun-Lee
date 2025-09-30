@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    color: darkgreen;
+}
+
+p {
+    color: blue;
+}
+
+#hear {
+    color: chocolate;
+}
+
+#overcome {
+    font-size: x-small;
+    color: aqua;
+}
+
+.bigger {
+    font-size: 17pt;
+}
+
+.yellow {
+    color: rgb(220, 199, 57);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.diff {
+    font-style: italic;
+}
+
+.special {
+    font-weight: 700;
+}
