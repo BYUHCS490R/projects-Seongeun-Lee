@@ -1,0 +1,22 @@
+nav a {
+    color: burlywood;
+}
+
+.current {
+    color: aliceblue;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(248, 145, 55);
+    background: url(photo/greenbg.jpg) rgb(136, 190, 56);
+}
+
+#home {
+    background: url(photo/halla.jpg) no-repeat right;
+}
+
+#mylist {
+    list-style-image: url(photo/tangerine.png);
+}
+
