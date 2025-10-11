@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: brown;
+    padding: 10px;
+    border-style: dashed;
+    border-color: green;
+    border-width: 7px;
+    margin: 20px;
+}
+
+header h1 {
+    background-color: palevioletred;
+    border: greenyellow dotted 5px;
+
+}
+
+
+nav {
+    background-color: rgb(222, 202, 177);
+    border: 5px dashed aquamarine;
+    padding: 5px;
+    padding-left: 10px;
+    width: 30%;
+}
+
+main h1 {
+    border: thin black dashed;
+    padding: 50px 100px 50px 100px;
+}
+
+#practice {
+    border: solid 2pt plum;
+    width: 50%;
+    height: 10pt;
+    overflow: hidden;
+}
+
+p {
+    background-color: yellowgreen;
+}
+
