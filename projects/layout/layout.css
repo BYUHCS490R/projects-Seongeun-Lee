@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 84, 22);
+    background-color: rgb(143, 230, 55);
+}
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8pt;
+    font-style: italic;
+
+    background: url(tangerine.png) left no-repeat;
+    background-origin: content-box;
+    background-clip: content-box;
+
+    border: dashed;
+    border-radius: 10pt;
+    padding-left: 10px;
+    margin: 10px;
+    width: 250px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: bisque;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: chocolate;
+    border: solid;
+    border-radius: 20pt;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: rgb(170, 127, 73);
+    color: rgb(236, 225, 217);
+    border: solid;
+}
+
+#wrapper {
+    background: rgb(255, 181, 44);
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+#mainphoto {
+    float: left;
+    border: 8px green solid;
+    border-radius: 10px;
+    background-color: darkgreen;
+    box-shadow: 10px 10px 10px greenyellow;
+}
+
+figcaption {
+    font-weight: 600;
+    color: peru;
+    height: 25px;
+}
+
+
+.clear {
+    clear: both;
+}
+
+#special {
+    line-height: 1.8;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+main h2 {
+    text-shadow: 3px 3px 4px rgb(255, 115, 0);
+}
