@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: beige;
+    color: aqua;
+    width: 150px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: beige;
+    background-color: aqua;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    border: thin solid black;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px rgba(219, 151, 163, 0.807);
+    width: 300px;
+    padding: 5px;
+}
+
+.mainthing {
+    order: -1;
+}
+
+.row {
+    display: flex;
+
+    flex-flow: row wrap;
+    /*flex-direction: row-reverse; column
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    */
+    justify-content: space-evenly;
+
+}
+
