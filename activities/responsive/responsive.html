@@ -19,22 +19,22 @@
     <div class="main-row">
         <div class="sidebar">
             <h3>Side Bar</h3>
-            <p>1. The viewport meta tag is important because it helps the website displayed properly. Thanks to the tag, the screen will not zoom in or out automatically on the mobile app or webpage.</p>
-            <p>2. To adjust the CSS for printing, making a copy of its css, and write media="print"in the link tag in the html.</p>
-            <p>3. Someone might prefer the content to the design for printing, and make an adjustment on the css.</p>
+            <p>1. The viewport meta tag is needed because, without the tag, webpages will shrink to fit the mobile screen size, and be hard to read it.</p>
+            <p>2. Whichever written on the bottom will take priority.</p>
+            <p>3. To change the CSS for a web page on a phone, use @media ONLY screen AND (max-width: 400px) {}. Depending on the screen size of the phone, you need to adjust the width.</p>
         </div>
         <main>
             <h2>Responsive Pages</h2>
             <div class="row">
                 <article class="card">
                     <img src="cat.png" alt="A drawing of a cat">
-                    <h3>Cat Info</h3>
+                    <h3>1st Card</h3>
                     <p>cat cat cat</p>
                     <a href="#">More info</a>
                 </article>
-                <article class="card">
+                <article class="card main-card">
                     <img src="cat.png" alt="A drawing of a cat">
-                    <h3>Cat Info</h3>
+                    <h3>2nd Card</h3>
                     <p>cat cat cat</p>
                     <a href="#">More info</a>
                 </article>

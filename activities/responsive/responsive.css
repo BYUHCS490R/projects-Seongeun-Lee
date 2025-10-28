@@ -45,20 +45,43 @@ nav a:hover {
 }
 
 .sidebar {
-    width: 400px;
+    width: 200px;
 }
 
 .card {
     border: thin solid black;
     box-shadow: 3px 3px 5px pink;
-    width: 300px;
+    width: 200px;
     margin: 5px;
 }
 
 card img {
     width: 100%;
 }
+
 .row {
     display: flex;
     flex-flow: row wrap;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    
+}
+
+@media ONLY screen AND (max-width: 400px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+    
+    .main-card {
+        order: -1
+    }
 }
