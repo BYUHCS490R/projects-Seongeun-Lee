@@ -1,0 +1,99 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(216, 196, 117);
+    margin: 0%;
+}
+
+header {
+    background-color: rgb(254, 226, 87);
+    color: rgb(137, 108, 13);
+}
+
+header h1 {
+    margin: 0pt;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    background-color: rgb(217, 198, 119);
+    margin: 3px;
+}
+
+nav a {
+    color: blanchedalmond;
+    padding: 5px;
+    border-radius: 5px;
+    font-style: italic;
+    text-decoration: solid;
+}
+
+nav a:hover {
+    background-color: blanchedalmond;
+    color: rgb(137, 108, 13);
+}
+
+.sidebar {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+}
+
+aside {
+    width: 30%;
+}
+
+main {
+    flex: 1;
+}
+
+.articles {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+article {
+    margin-right: 50px;
+    width: 30%;
+}
+
+footer {
+    margin-left: 10px;
+}
+
+.info {
+    color: darkgoldenrod;
+    font-style: italic;
+}
+
+@media ONLY print {
+    nav {
+        display: none;
+    }
+}
+
+@media ONLY screen AND (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .articles {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+    }
+}
