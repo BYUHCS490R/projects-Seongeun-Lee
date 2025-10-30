@@ -73,6 +73,9 @@ footer {
     nav {
         display: none;
     }
+    aside {
+        width: 100%;
+    }
 }
 
 @media ONLY screen AND (max-width: 400px) {
