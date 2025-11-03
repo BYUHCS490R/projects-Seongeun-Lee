@@ -18,7 +18,7 @@
     </nav>
     <main>
         <h2>Tables</h2>
-        <table>
+        <table class="schedule">
             <!--table row, table data, border is not used anymore, table head, table body-->
             <!--table heading?(title): 볼드체에 가운데 정렬 -->
             <!--rowspan 수직, colspan 수평-->
@@ -49,7 +49,7 @@
                     <td>3</td>
                 </tr>
                 <tr>
-                    <td>140</td>
+                    <td class="num">140</td>
                     <td>Web Design</td>
                     <td>11 AM MWF</td>
                     <td>3</td>
@@ -69,6 +69,8 @@
                 </tr>
             </tfoot>
         </table>
+        <p>1. We don't use the border attribute, because it is not valid anymore, and CSS can do more details.</p>
+        <p>2. The easiest way to color every other row is using a pseudo code ":nth-child(even)" or "(odd)."</p>
         <p>1. I use a table when I want to display data as a tabular form.</p>
         <p>2. I don't use a table if I just list information.</p>
         <p>3. I need to do extra work for table accessibility, when the lable is on the left side of the data.</p>
