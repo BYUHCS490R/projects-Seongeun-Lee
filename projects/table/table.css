@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(133, 185, 205);
+}
+
+main {
+    display: flex;
+}
+
+table {
+    order: -1;
+    background-color: blanchedalmond;
+    border: 3px solid skyblue;
+    border-spacing: 02px;
+    margin: 0 auto;
+}
+
+table thead {
+    font-style: italic;
+    color: darkblue;
+}
+
+table th, table td {
+    border: 3px solid skyblue;
+    
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: rgb(224, 198, 157);
+    
+}
+
+aside {
+    width: 200px;
+    margin-left: auto;
+    background-color: skyblue;
+    padding: 10px;
+}
