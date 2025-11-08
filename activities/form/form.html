@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Seongeun's Web Design</h1>
+    </header>
+    <main>
+        <h1>Forms</h1>
+        <form action="formprocess.html" method="post">
+            <div>
+                <label for="fname">Full Name:</label> 
+                <input type="text" name="fullname" placeholder="Full Name" id="fname">
+            </div>
+            <div>
+                <label for="email">Email:</label> 
+                <input type="email" name="eaddress" placeholder="your@email.com" id="email">
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" placeholder="Password" id="pass">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank">---</option>
+                    <option value="CA">California</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label><input type="checkbox"> I agree to the terms</label>
+            </div>
+            <div>
+                Gender
+                <label><input type="radio" name="gender" value="Male">Male</label>
+                <label><input type="radio" name="gender" value="Female">Female</label>
+            </div>
+            <div>
+                <label for="comment">Comments:</label>
+                <textarea name="comment" id="comment">Hi</textarea>
+            </div>
+            <input type="submit" value="Sign Up">
+            
+        </form>
+        <p>The form tag has an "action" attribute. What does it do? <br>It has the address or the link where your data in form goes.</p>
+        <p>The form tag has a "method" attribute. What does it do? <br>It decides how the form will be treated/sent.</p>
+        <p>What is the difference between a "POST" and a "GET"?<br>If you use "get," then your data in form will show up in the address, but "post" will hide it. "Get" is used for reading or serching, and "post" is used for updates or changes.</p>
+    </main>
+    <footer>
+        &copy; 2025 Seongeun Lee
+    </footer>
+</body>
+</html>
