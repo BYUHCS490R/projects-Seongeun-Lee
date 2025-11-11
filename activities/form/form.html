@@ -13,42 +13,53 @@
     <main>
         <h1>Forms</h1>
         <form action="formprocess.html" method="post">
-            <div>
-                <label for="fname">Full Name:</label> 
-                <input type="text" name="fullname" placeholder="Full Name" id="fname">
-            </div>
-            <div>
-                <label for="email">Email:</label> 
-                <input type="email" name="eaddress" placeholder="your@email.com" id="email">
-            </div>
-            <div>
-                <label for="pass">Password:</label>
-                <input type="password" name="pass" placeholder="Password" id="pass">
-            </div>
-            <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank">---</option>
-                    <option value="CA">California</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div>
-                <label><input type="checkbox"> I agree to the terms</label>
-            </div>
-            <div>
-                Gender
-                <label><input type="radio" name="gender" value="Male">Male</label>
-                <label><input type="radio" name="gender" value="Female">Female</label>
-            </div>
-            <div>
-                <label for="comment">Comments:</label>
-                <textarea name="comment" id="comment">Hi</textarea>
-            </div>
-            <input type="submit" value="Sign Up">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label> 
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label> 
+                    <input type="email" name="eaddress" placeholder="your@email.com" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" placeholder="Password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">---</option>
+                        <option value="CA">California</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox"> I agree to the terms</label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Gender:</div>
+                    <label><input type="radio" name="gender" value="Male">Male</label>
+                    <label><input type="radio" name="gender" value="Female">Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment">Hi</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
             
         </form>
+        <h2>Today's assignment</h2>
+        <p>What are different ways to style your form?<br> I can use flex, or grid to place visually better, and I can use fieldset and legend to make it more like a form.</p>
+        <p>How does flex help for both Desktop and Mobile phones? <br> The contents can be simply adjusted by changing the flex direction.</p>
+        <h2>The last assignment</h2>
         <p>The form tag has an "action" attribute. What does it do? <br>It has the address or the link where your data in form goes.</p>
         <p>The form tag has a "method" attribute. What does it do? <br>It decides how the form will be treated/sent.</p>
         <p>What is the difference between a "POST" and a "GET"?<br>If you use "get," then your data in form will show up in the address, but "post" will hide it. "Get" is used for reading or serching, and "post" is used for updates or changes.</p>
