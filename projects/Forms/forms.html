@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Song's Forms</h1>
+    </header>
+    <main>
+        <form action="text.html" method="post">
+            <fieldset>
+                <legend>Sign Up for Dating</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label> 
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" placeholder="Password" id="pass">
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Meeting Time:</div>
+                    <label><input type="radio" name="time" value="lunch">Lunch</label>
+                    <label><input type="radio" name="time" value="dinner">Dinner</label>
+                </div>
+                <div class="form-row">
+                    <label for="activity">Activity:</label>
+                    <select name="activity" id="activity">
+                        <option value="blank">---</option>
+                        <option value="hike">Hiking</option>
+                        <option value="movie">Watching Movie</option>
+                        <option value="surf">Surfing</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment">Write any concern or questions.</textarea>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox"> I agree to the terms</label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        &copy; 2025 Seongeun Lee
+    </footer>
+    
+</body>
+</html>
