@@ -1,6 +1,59 @@
 header, footer {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
-    color: darkblue;
+    color: rgb(92, 13, 41);
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-row, .check-row, .submit {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.form-row label, .spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input, .form-row select, .form-row textarea {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: rgb(155, 102, 144);
+    color: beige;
+}
+
+fieldset {
+    background-color: rgb(207, 162, 202);
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+legend {
+    color: rgb(198, 34, 159);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.submit input {
+    background-color: rgb(198, 34, 159);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .form-row, .check-row, .submit {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        text-align: left;
+    }
+}
