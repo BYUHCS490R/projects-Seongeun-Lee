@@ -12,7 +12,7 @@
     </header>
     <main>
         <h1>Forms</h1>
-        <form action="formprocess.html" method="post">
+        <form action="formprocess.html" method="post" id="myform">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
@@ -57,9 +57,14 @@
             
         </form>
         <h2>Today's assignment</h2>
+        <p>What is JavaScript? How did it get its name? <br> It is a programming language for web pages. It got its name from Java. The company wanted to use the popularity of Java.</p>
+        <p>What are the two ways you can run JavaScript? <br> In web browser or html pages.</p>
+        <p>>What was the most popular front-end js library? <br>jQuery</p>
+        <p>What is the most popular front-end js library today? <br> </p>React</p>
+        <h2>The last assignment 1</h2>
         <p>What are different ways to style your form?<br> I can use flex, or grid to place visually better, and I can use fieldset and legend to make it more like a form.</p>
         <p>How does flex help for both Desktop and Mobile phones? <br> The contents can be simply adjusted by changing the flex direction.</p>
-        <h2>The last assignment</h2>
+        <h2>The last assignment 2</h2>
         <p>The form tag has an "action" attribute. What does it do? <br>It has the address or the link where your data in form goes.</p>
         <p>The form tag has a "method" attribute. What does it do? <br>It decides how the form will be treated/sent.</p>
         <p>What is the difference between a "POST" and a "GET"?<br>If you use "get," then your data in form will show up in the address, but "post" will hide it. "Get" is used for reading or serching, and "post" is used for updates or changes.</p>
@@ -67,5 +72,27 @@
     <footer>
         &copy; 2025 Seongeun Lee
     </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const fullname = document.getElementById('fname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            
+            if (!fullname || !email) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                pass: password
+            };
+            alert('Form submitted!');
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>
