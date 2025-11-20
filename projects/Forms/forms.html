@@ -11,7 +11,8 @@
         <h1>Song's Forms</h1>
     </header>
     <main>
-        <form action="text.html" method="post">
+        <div id="message"></div>
+        <form action="formprocess.html" method="post" id="myform">
             <fieldset>
                 <legend>Sign Up for Dating</legend>
                 <div class="form-row">
@@ -26,7 +27,10 @@
                     <label for="phone">Phone Number:</label> 
                     <input type="tel" name="phone" placeholder="(123) 456-7890" id="phone">
                 </div>
-                
+                <div class="form-row">
+                    <label for="age">Age:</label> 
+                    <input type="number" name="age" placeholder="Age" id="age" min="20" max="35">
+                </div>
                 <div class="form-row">
                     <label for="date">Meeting Date:</label> 
                     <input type="date" name="date" id="date">
@@ -57,14 +61,12 @@
                     <div class="spacer"></div>
                     <input type="submit" value="Sign Up">
                 </div>
-                
             </fieldset>
         </form>
-
     </main>
     <footer>
         &copy; 2025 Seongeun Lee
     </footer>
-    
+    <script src="forms.js"></script>
 </body>
 </html>
