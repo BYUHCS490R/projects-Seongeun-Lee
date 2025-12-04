@@ -19,10 +19,47 @@
         </nav>
     </header>
     <main>
+        <div class="container">
+            <p class="explain">Feel free to explore how the app will look! If you'd like to receive a message from us to try the real app when it launches, please fill out the form.</p>
+        </div>
+        <div id="edit">
+            <a href="#" class="try">Try Now</a>
+        </div>
+
+        <form action="formprocess.html" method="post" id="myform">
+            <fieldset>
+                <legend>First Service</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label> 
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label> 
+                    <input type="email" name="emailaddress" placeholder="your@email.com" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">---</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="etc">Outside of Hawaii</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment">Give us feedback.</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
 
     </main>
     <footer>
         <p>&copy; 2025 Seongeun Lee</p>
     </footer>
+    <script src="demo.js"></script>
 </body>
 </html>
